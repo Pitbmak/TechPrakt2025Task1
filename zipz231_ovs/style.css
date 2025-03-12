@@ -1,0 +1,39 @@
+:root {
+    --text: #f8e4f3;
+    --background: #150610;
+    --surface: #e08ac60d;
+    --primary: #e08ac6;
+    --secondary: #7f2235;
+    --accent: #cc4941;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+.news-section{
+    width: 100%;
+    text-align: center;
+}
+.news-section-header{
+    font-size: 100px;
+}
+
+.news-card{
+    background: var(--surface);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.news-card-header{
+    text-align: start;
+}
+.news-card-content{
+    text-align: end;
+}
