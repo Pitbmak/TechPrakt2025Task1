@@ -12,7 +12,7 @@
 <div class="container">
     <section class="news-section">
         <h2 class="header">News</h2>
-        <div class="container">
+        <div id="news-container" class="container">
 
             <div class="news-card" data-news-url="https://devclass.com/2025/02/27/microsoft-previews-net-10-including-first-look-at-c-14/">
                 <div class="img-container">
@@ -87,5 +87,23 @@
         </div>
     </section>
 </div>
+<script>
+    let newsContainer = document.querySelector("#news-container");
+
+    newsContainer.addEventListener("click", (event) => {
+        let el = event.target;
+
+        if(el.tagName !== "BUTTON" || !el.classList.contains("read-more")){
+            return null;
+        }
+
+        let newsCard = el.closest(".news-card");
+        if(newsCard == null){
+            return null;
+        }
+
+        window.location.href = newsCard.getAttribute("data-news-url");
+    })
+</script>
 </body>
 </html>
