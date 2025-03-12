@@ -16,10 +16,12 @@
 body {
   background-color: var(--background);
   color: var(--text);
+  position: relative;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   width: 1000px;
   margin: auto;
 }
@@ -74,6 +76,18 @@ body {
   align-self: flex-end;
   margin-right: 20px;
   border-radius: 10px;
+}
+
+footer {
+  width: 80%;
+  margin: auto;
+  border-radius: 20px 20px 0 0;
+  height: 100px;
+  color: var(--accent);
+  background-color: var(--surface);
+  font-size: 24px;
+  padding-top: 40px;
+  padding-left: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
